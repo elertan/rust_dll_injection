@@ -1,0 +1,13 @@
+[package]
+name = "app"
+version = "0.1.0"
+authors = ["Dennis Kievits"]
+edition = "2018"
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser"] }
